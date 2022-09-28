@@ -24,7 +24,7 @@ header {
   padding-bottom: 1rem;
 }
 body {
-  background-image: url("/bgimage/background.jpeg");
+  background-image: url("bgimage/background.jpeg");
   color: white;
 }
 .searchBar {

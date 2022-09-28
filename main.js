@@ -208,7 +208,7 @@ function cleanStudentData() {
     haveImg();
     function haveImg() {
       //   // images are displayed with the last nameand first letter of the first name
-      let imgSrc = `../images/${fullName.substring(fullName.lastIndexOf(" ") + 1).toLowerCase()}_${fullName.substring(0, 1).toLowerCase()}.png`;
+      let imgSrc = `images/${fullName.substring(fullName.lastIndexOf(" ") + 1).toLowerCase()}_${fullName.substring(0, 1).toLowerCase()}.png`;
       // if img have no lastname hard coded for it
       if (fullName === "Leanne") {
         // console.log((imgSrc = `No_Image`));
@@ -217,12 +217,12 @@ function cleanStudentData() {
       // if it include "-" name
       else if (fullName.includes("-")) {
         // console.log((imgSrc = `../images/${fullName.substring(fullName.lastIndexOf("-") + 1).toLowerCase()}_${fullName.substring(0, 1).toLowerCase()}.png`));
-        return (singleStudent.imgSrc = `../images/${fullName.substring(fullName.lastIndexOf("-") + 1).toLowerCase()}_${fullName.substring(0, 1).toLowerCase()}.png`);
+        return (singleStudent.imgSrc = `images/${fullName.substring(fullName.lastIndexOf("-") + 1).toLowerCase()}_${fullName.substring(0, 1).toLowerCase()}.png`);
       }
       // include two surname patil
       else if (fullName.toLowerCase().includes("patil")) {
         // console.log((imgSrc = `../images/${fullName.substring(fullName.lastIndexOf(" ") + 1).toLowerCase()}_${fullName.substring(0, fullName.indexOf(" ")).toLowerCase()}.png`));
-        return (singleStudent.imgSrc = imgSrc = `../images/${fullName.substring(fullName.lastIndexOf(" ") + 1).toLowerCase()}_${fullName.substring(0, fullName.indexOf(" ")).toLowerCase()}.png`);
+        return (singleStudent.imgSrc = imgSrc = `images/${fullName.substring(fullName.lastIndexOf(" ") + 1).toLowerCase()}_${fullName.substring(0, fullName.indexOf(" ")).toLowerCase()}.png`);
       }
       //   console.log("image: ", imgSrc);
       return (singleStudent.imgSrc = imgSrc);
